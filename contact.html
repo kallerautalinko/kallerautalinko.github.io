@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Yhteystiedot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Koti</a></li>
+                <li><a href="about.html">Tietoja</a></li>
+                <li><a href="contact.html">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact-section">
+        <h1> Ota meihin yhteyttä! </h1>
+        <div class="contact-info">
+            <p>Sähköposti: tukipalvelu@koris.com</p>
+            <p>Puhelin: 11 151 8919 </p>
+            <p>Osoite: Puujalankuja 23, 71512 Helsinki</p>
+        </div>
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Viesti:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Lähetä viesti</button>
+        </form>
+        <section class="contact-section">
+            <img src="asiakaspalvelu.jpeg" class="contact-image-below">
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Koripallo-yhteisö.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
